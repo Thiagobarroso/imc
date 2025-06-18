@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fdfeff;
+  color: #393c45;
+}
+
+input {
+  border: none;
+  background-color: #212232;
+  color: white;
+  height: 35px;
+  border: 1px solid blue;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.container h1 {
+  background: linear-gradient(90deg, #3b82f6, #29c063);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form {
+  width: 900px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 5px 50px 0px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+input {
+  background-color: #fff;
+  color: black;
+}
+
+.mensagem {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title-container {
+  background: linear-gradient(90deg, #3b82f6, #29c063);
+  color: white;
+  padding: 20px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-calcular {
+  padding: 10px 80px;
+}
+
+.btn-limpar {
+  padding: 10px 20px 10px;
+}
+
+.container-result {
+  border: 1px solid black;
+  border-radius: 5px;
+  border-color: #4587e8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.classificacao {
+  padding: 25px 25px;
+  margin: 25px 25px 0px 25px;
+  grid-column: 1 / -1;
+  background-color: #f0fafc;
+}
+
+.classificacao-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.classificacao .item {
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.classificacao .abaixo {
+  background-color: #dceaff;
+  color: #516daf;
+}
+
+.classificacao .normal {
+  background-color: #dcfce7;
+  color: #4f8563;
+}
+
+.classificacao .sobrepeso {
+  background-color: #fef9c2;
+  color: #745d27;
+}
+
+.classificacao .obeso {
+  background-color: #ffe2e1;
+  color: #7c3c3c;
+}
+
+.title-info {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* responsividade */
+
+@media (max-width: 800px) {
+  .container h1 {
+    font-size: 20px;
+  }
+  .container p {
+    font-size: 12px;
+    max-width: 300px;
+  }
+  .form {
+    width: 400px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .title-container {
+    padding: 10px;
+  }
+  .form-container {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 10px 5px 10px 0px;
+  }
+
+  .container-result {
+    place-items: center;
+  }
+  .btn-calcular {
+    padding: 5px 40px;
+    font-size: 14px;
+  }
+
+  .btn-limpar {
+    font-size: 14px;
+    padding: 10px 20px 10px;
+  }
+
+  .mensagem {
+    margin-top: 0px;
+    padding: 10px;
+  }
+}
