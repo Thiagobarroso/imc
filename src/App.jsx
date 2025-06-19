@@ -108,7 +108,7 @@ function App() {
                 <p>18.0 - 24.9</p>
               </div>
               <div className="item sobrepeso">
-                <p className="title-info">Sobre peso</p>
+                <p className="title-info">Sobrepeso</p>
                 <p>25.0 - 29.9</p>
               </div>
               <div className="item obeso">
